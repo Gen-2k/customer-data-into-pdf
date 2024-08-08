@@ -46,7 +46,7 @@ const CustomerForm = ({ customerToEdit, onFormSubmit }) => {
       const result = await response.json()
       if (result.status === 'success') {
         alert('Data saved successfully!')
-        onFormSubmit() // Trigger refetch of customer data
+        onFormSubmit()
       } else {
         alert('Failed to save data.')
       }
